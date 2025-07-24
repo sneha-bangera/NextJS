@@ -10,7 +10,7 @@ const Dashboard = () => {
   const session = useSession();
   const router = useRouter();
 
-  // 🔁 Redirect only after component mounts
+  //Redirect only after component mounts
   useEffect(() => {
     if (session.status === "unauthenticated") {
       router.push("/dashboard/login");

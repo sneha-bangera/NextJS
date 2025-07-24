@@ -18,7 +18,7 @@ const Login = ({ url }) => {
     setSuccess(params.get("success"));
   }, [params]);
 
-  // ✅ Redirect on authentication in useEffect
+  // Redirect on authentication in useEffect
   useEffect(() => {
     if (session.status === "authenticated") {
       router.push("/dashboard");
